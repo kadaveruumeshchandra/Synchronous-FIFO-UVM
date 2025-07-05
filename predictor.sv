@@ -9,7 +9,7 @@ class sb_predictor extends uvm_subscriber#(my_transaction);
 
   function void build_phase(uvm_phase phase);
     super.build_phase(phase);
-    results_ap=new9"results_ap",this);
+    results_ap=new("results_ap",this);
   endfunction
 
   function void write(my_transaction t);
